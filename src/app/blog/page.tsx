@@ -1,4 +1,5 @@
 import Link from 'next/link'
+// import ContactForm from "@/app/contact/components/contactForm.tsx";
 export default function Blogs(){
     return <>
     <section className="Sub-header">
@@ -42,51 +43,39 @@ export default function Blogs(){
           <h5>Aug 1, 2021</h5>
           <img src="img/post.png" alt="" />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-            dolor consequatur, nobis quae obcaecati delectus at aspernatur,
-            placeat quasi iure mollitia. Repellendus a ut nostrum dolore velit
-            odit cumque, quos doloribus sint id aperiam eius aliquam quo modi
-            sequi rem quia exercitationem laborum, ratione expedita! Deleniti
-            velit officia incidunt illum.
+            ider message post hu gye if it works then  yup
           </p>
-          <br />
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore
-            corrupti blanditiis deserunt incidunt itaque ut laudantium a amet
-            omnis nihil, dolor doloribus. Voluptatum, accusantium? Quo, aperiam
-            nobis labore pariatur, esse vitae amet repellendus libero architecto
-            nisi facere unde ducimus perspiciatis, laudantium alias porro.
-            Sapiente voluptatem eligendi at voluptatum optio facilis?
-          </p>
-          <br />
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore
-            corrupti blanditiis deserunt incidunt itaque ut laudantium a amet
-            omnis nihil, dolor doloribus. Voluptatum, accusantium? Quo, aperiam
-            nobis labore pariatur, esse vitae amet repellendus libero architecto
-            nisi facere unde ducimus perspiciatis, laudantium alias porro.
-            Sapiente voluptatem eligendi at voluptatum optio facilis?
-          </p>
-          <br />
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore
-            corrupti blanditiis deserunt incidunt itaque ut laudantium a amet
-            omnis nihil, dolor doloribus. Voluptatum, accusantium? Quo, aperiam
-            nobis labore pariatur, esse vitae amet repellendus libero architecto
-            nisi facere unde ducimus perspiciatis, laudantium alias porro.
-            Sapiente voluptatem eligendi at voluptatum optio facilis?
-          </p>
-          <div className="comment-box">
+
+          {/* <div className="comment-box">
             <h3>Leave a Comment</h3>
-            <form className="comment-form">
-              <input type="text" placeholder="Enter Name" defaultValue={""} />
-              <input type="email" placeholder="Enter Email" defaultValue={""} />
-              <textarea rows={5} placeholder="Your Comment" defaultValue={""} />
-              <button type="submit" className="hero_btn btn">
-                POST COMMENT
-              </button>
-            </form>
-          </div>
+            <ContactForm/>
+          </div> */}
+
+
+
+    <div style={{ backgroundColor: '#FFD1DC', fontFamily: 'Arial', padding: '20px' }}>
+      <h1 style={{ color: '#FF88CC' }}>Contact Us</h1>
+      <form>
+        <label style={{ color: '#FF88CC' }}>Name:</label><br/>
+        <input type="text" name="name" style={{ backgroundColor: '#FFB7C5' }}/><br/>
+        <label style={{ color: '#FF88CC' }}>Email:</label><br/>
+        <input type="email" name="email" style={{ backgroundColor: '#FFB7C5' }}/><br/>
+        <label style={{ color: '#FF88CC' }}>Phone:</label><br/>
+        <input type="tel" name="phone" style={{ backgroundColor: '#FFB7C5' }}/><br/>
+        <label style={{ color: '#FF88CC' }}>Date of Birth:</label><br/>
+        <input type="date" name="dob" style={{ backgroundColor: '#FFB7C5' }}/><br/>
+        <label style={{ color: '#FF88CC' }}>Favorite Color:</label><br/>
+        <input type="color" name="color" style={{ backgroundColor: '#FFB7C5' }}/><br/>
+        <label style={{ color: '#FF88CC' }}>Country:</label><br/>
+        <input type="text" name="country" style={{ backgroundColor: '#FFB7C5' }}/><br/>
+        <label style={{ color: '#FF88CC' }}>Bio:</label><br/>
+        <textarea name="bio" style={{ backgroundColor: '#FFB7C5' }}/><br/>
+        <label style={{ color: '#FF88CC' }}>Agree to Terms:</label><br/>
+        <input type="checkbox" name="terms"/><br/>
+        <input type="submit" value="Submit" style={{ backgroundColor: '#FF88CC', color: 'white', fontSize: '20px', borderRadius: '50px', padding: '10px 20px' }}/>
+        
+      </form>
+    </div>
         </div>
         <div className="blog-right">
           <h3>Post Categories</h3>

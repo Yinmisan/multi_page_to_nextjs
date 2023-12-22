@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import ContactForm from "./components/contactForm";
 export default function Contacts(){
     return <>
     <section className="Sub-header">
@@ -33,6 +34,7 @@ export default function Contacts(){
         {/* reposnive bar open and close */}
       </nav>
       <h1>Contact Us</h1>
+     
     </section>
     {/* Contact Us Section Start */}
     <section className="loacation">
@@ -71,20 +73,7 @@ export default function Contacts(){
           </div>
         </div>
         <div className="content-col">
-          <form>
-            <input type="text" placeholder="Enter Name" defaultValue={""} />
-            <input type="email" placeholder="Enter Email" defaultValue={""} />
-            <input type="text" placeholder="Enter Subject" defaultValue={""}/>
-            <textarea
-              rows={8}
-              placeholder="Message"
-              required={false}
-              defaultValue={""}
-            />
-            <button type="submit" className="hero_btn btn">
-              Send Message
-            </button>
-          </form>
+        <ContactForm/>
         </div>
       </div>
     </section>
