@@ -159,7 +159,9 @@ export default function ContactForm() {
         {errors.map((item)=>{
           return (
             <div style={{color:"red"}}>
-              <h1>{item}</h1>
+              <li key={item}>
+              <h2>{item}</h2>
+              </li>
             </div>
           )
         })}
